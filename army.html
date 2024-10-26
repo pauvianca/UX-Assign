@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS - ARMY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #81609a;
+        }
+
+        .navbar a {
+            color: white;
+            font-weight: normal;
+        }
+
+        .navbar a:hover {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar .nav-item .active {
+            font-weight: bold;
+            color: white;
+        }
+
+
+        /* Container for image and text */
+        .hero-container {
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .hero-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .description-section {
+            padding: 30px 20px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .description-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #533e9a;
+            text-align: center;
+        }
+
+        .description-section h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #533e9a            
+        }
+
+        .description-section p {
+            font-size: 1.1rem;
+            margin-top: 15px;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 2px auto;
+            text-align: justify;
+        }
+
+        .credits {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: #81609a;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Section headers */
+        .section-header {
+            background-color: #81609a;
+            color: #d0aceb;
+            text-align: center;
+            padding: 10px;
+            font-size: 2rem;
+            font-family: 'GFS Didot', serif;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Content style */
+        .content-section {
+            padding: 30px;
+        }
+
+        .content-section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+
+        }
+
+        /* Image placeholder style */
+        .image-placeholder {
+            width: 100%;
+            max-width: 800px;
+            height: 240px;
+            background-color: #d0d0d0;
+            border-radius: 10px;
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        } /*  img on the left side */
+
+        .image-row img {
+            height: auto;
+            border-radius: 10px;
+            width: 100%;
+            /* Maximum width to keep it from getting too large */
+            height: auto;
+            /* Keeps the aspect ratio */
+            object-fit: cover;
+
+        }
+
+        /* Section with background */
+        .background-purple {
+            background-color: #81609a;
+            color: white;
+        }
+
+        /* Button back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #533e9a;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: none;
+            /* Initially hidden */
+        }
+
+        .back-to-top:hover {
+            background-color: #81609a;
+        }
+
+        /* Show button when scrolling */
+        .show-btn {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="trial_ux.html">
+                <img src="https://www.dropbox.com/scl/fi/qugiun5kom6x554cytt7n/logo-ux.png?rlkey=h99fmoxrgshvyo1c2mf534mrm&st=e1loar2d&raw=1" 
+                alt="BTS Logo" style="height: 50px; vertical-align: middle;"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trial_ux.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discography.html">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="army.html">Army</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Container -->
+    <div class="hero-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img src="https://larepublica.cronosmedia.glr.pe/original/2022/06/01/6296ceb534acb2091f7c5bbd.jpg"
+                alt="BTS ARMY">
+            <p class="credits">Image Credits to HYBE LABELS</p>
+        </section>
+
+        <!-- Description Section -->
+        <section class="description-section">
+            <h1>ARMYs</h1>
+            <p>
+                The BTS ARMY, which stands for "Adorable Representative M.C. for Youth," is the official fandom name for
+                BTS.
+                The fandom was named by BTS’s label, Big Hit Entertainment, in 2013, shortly after BTS's debut. The word
+                "ARMY" symbolizes how the fans are always there to support BTS, much like soldiers are supported by
+                their army. Over the years, ARMY has grown to become one of the most active and influential fan groups
+                in the world.
+            </p>
+            <p>
+                Known for their intense loyalty and dedication, ARMYs engage in various charitable activities, trend
+                hashtags on social media to support BTS, and organize fundraising events. ARMYs are also recognized for
+                their global reach, transcending language barriers, and supporting BTS's messages of self-love,
+                equality, and social justice.
+            </p>
+            
+        </section>
+    </div>
+
+    <!-- Section 1: Why are the Fans So Dedicated? -->
+    <section class="section-header background-purple ">
+        WHY ARE THE FANS SO DEDICATED?
+    </section>
+    <section class="content-section text-center">
+        <section class="description-section text-justify">
+            <div class="image-row">
+
+                <p>BTS fans, known as ARMY, are incredibly dedicated for a variety of reasons.
+                    It goes beyond just loving the music; it’s a deep emotional connection to
+                    the group’s message, philosophy, and how BTS has impacted their personal
+                    lives.</p>
+            </div>
+            <h3> Emotional Connection and Support </h3>
+            <section class="description-section text-justify">
+                <d>
+                    <p> One of the primary reasons why ARMY is so dedicated is that BTS’s music often addresses
+                        themes like self-love, mental health, struggles, and resilience. Songs like "Magic Shop" and
+                        "Answer: Love Myself"
+                        directly speak to listeners who might be struggling with self-doubt, anxiety, or depression.
+                        Many fans have shared
+                        personal stories of how BTS's music has helped them feel understood and not alone in their
+                        struggles. The group has also openly discussed their own mental health challenges, which creates
+                        a sense of solidarity between them and their fans.
+                        For example, RM, the leader of BTS, has often spoken about how the group’s philosophy is about
+                        loving yourself even when it's hard.
+                        This resonates with many fans, especially young people dealing with self-esteem issues. The
+                        group’s "Love Yourself" series had a huge impact on fans, as it encouraged them to embrace who
+                        they are, despite their imperfections.
+                    </p>
+
+                    <div class="image-placeholder">
+                        <img src="https://api.time.com/wp-content/uploads/2020/11/bts-army.jpg"
+                            style="width: 800px; height: 250px; object-fit: cover;">
+                    </div>
+
+                    <p>For example, RM, the leader of BTS, has often spoken about how the group’s philosophy is about
+                        loving yourself even when it's hard. This resonates with many fans, especially young people
+                        dealing with self-esteem issues. The group’s "Love Yourself" series had a huge impact on fans,
+                        as it encouraged them to embrace who they are, despite their imperfections.
+                    </p>
+
+                    <h3> Examples of fans Dedication</h3>
+                    <p> 
+                        ARMY has shown remarkable dedication in various ways, often taking their love for BTS beyond just listening to music. For instance, fans regularly organize charity drives in the group’s name. In 2019, when BTS performed in the UK, fans raised over £50,000 for UNICEF. This type of organized fan effort isn’t uncommon and is one of the reasons why people see ARMY as a positive force.
+                    </p>
+
+                    <p>On social media, ARMYs work together to promote the group, often trending hashtags like #BTSARMY or 
+                        #PurpleYou on platforms like Twitter. BTS fans are known to break YouTube records, often organizing
+                         "streaming parties" where they collectively watch and share BTS music videos to reach milestones in views and break records.
+                    </p>
+            </section>
+        </section>
+
+<!-- Section 2: How Did BTS Transcend Language Barriers? -->
+<section class="section-header background-purple">
+    HOW DID BTS TRANSCEND LANGUAGE BARRIERS?
+</section>
+<section class="content-section text-center background-purple">
+    <div class="description-section text-justify">
+        <p>
+            BTS broke through language barriers by using universal themes and relatable messages in their music, such as self-love, mental health, and personal growth. They communicate these ideas effectively through visual storytelling in music videos, expressive performances, and social media interactions. Fans globally relate to their themes, even if they don’t speak Korean.
+        </p>
+        <p>
+            Additionally, BTS actively engages with their international fans through platforms like Weverse and Twitter, where they post updates, share thoughts, and communicate directly. Their agency, HYBE, provides official subtitles for videos, making their content accessible to a broader audience. BTS’s collaborations with Western artists and their English singles like "Dynamite" and "Butter" have also made them more accessible globally.
+        </p>
+        <p>
+            By focusing on universally relatable content and maintaining a strong digital presence, BTS has managed to create a deep connection with fans worldwide, transcending language barriers and building a truly international fanbase.
+        </p>
+    </div>
+</section>
+
+
+ 
+        <!-- Back to top button -->
+        <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+        <!-- Footer -->
+        <footer class="text-center mt-5 mb-3">
+            <p>&copy; 3140567: Paula Vianca Cunanan, University of Stirling.
+                Contact Us</p>
+        </footer>
+
+        <script>
+            // Show back-to-top button on scroll
+            window.onscroll = function () {
+                const backToTopBtn = document.getElementById("backToTopBtn");
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    backToTopBtn.classList.add("show-btn");
+                } else {
+                    backToTopBtn.classList.remove("show-btn");
+                }
+            };
+
+            // Scroll to top function
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+
+</body>
+
+</html>

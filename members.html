@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Members</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Go to top" class="back-to-top-btn">
+        ↑
+    </button>
+    
+    <script>
+        // Get the button
+        let backToTopBtn = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        // Scroll to the top of the page when the button is clicked
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #81609a;
+        }
+
+        .navbar a {
+            color: white;
+            font-weight: normal;
+        }
+
+        .navbar a:hover {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar .nav-item .active {
+            font-weight: bold;
+            color: white;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #81609a;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Section header */
+        .section-header {
+            background-color: #81609a;
+            color: #d0aceb;
+            text-align: center;
+            padding: 10px;
+            font-size: 2rem;
+            font-family: 'GFS Didot', serif;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        /* Style for the Back to Top Button */
+        .back-to-top-btn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stays in place when scrolling */
+            bottom: 20px;
+            /* Position at the bottom of the screen */
+            right: 20px;
+            /* Position at the right of the screen */
+            z-index: 99;
+            /* Ensure it stays on top of other elements */
+            background-color: #533e9a;
+            /* Purple background color */
+            color: white;
+            /* White text */
+            border: none;
+            /* Remove borders */
+            border-radius: 50%;
+            /* Round button */
+            padding: 15px;
+            /* Padding inside the button */
+            font-size: 18px;
+            /* Increase font size */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            /* Shadow for effect */
+        }
+
+        .back-to-top-btn:hover {
+            background-color: #81609a;
+            /* Lighter purple on hover */
+        }
+         /* Image cropping */
+         .cropped-image {
+            width: 774px;
+            height: 310px;
+            object-fit: cover; /* This will crop the image instead of stretching */
+            display: block;
+            margin-bottom: 20px;
+            margin-left: auto ;
+            margin-right: auto;             
+        }
+
+    
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="trial_ux.html">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/027/127/525/small/bts-logo-bts-icon-transparent-free-png.png"
+                    alt="BTS Logo" style="height: 50px; vertical-align: middle;">
+                BTS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trial_ux.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="members.html">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discography.html">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="army.html">Army</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Centered Title Section -->
+    <section class="container mt-4 text-center">
+        <h1 style="color: #492264; font-size: 2.5rem; font-weight: bold; letter-spacing: 1px;">BTS MEMBERS</h1>
+        <hr style="border-top: 2px solid #533e9a; width: 50%; margin: 20px auto;">
+        <p>BTS is composed of seven talented members. Below is the order in which they are introduced:
+             leader first, followed by the oldest to the youngest. 
+             This is also the order of the BTS fanchant that fans (ARMYS) follow 
+             during performances.</p>
+
+    </section>
+
+<!-- RM Section -->
+<section id="rm" style="background-color:#492264; padding:20px;">
+    <div class="container" style="text-align:center; color:white;">
+        <h2>RM</h2>
+        <img src="https://www.allkpop.com/upload/2023/03/content/131251/1678726290-untitled-1.jpg" alt="RM" class="cropped-image">
+        <p><strong>Real Name:</strong> Kim Nam-joon</p>
+        <p><strong>Age:</strong> 30</p>
+        <p><strong>Birthday:</strong> September 12, 1994</p>
+        <p><strong>Hometown:</strong> Ilsan, South Korea</p>
+        <p><strong>Position:</strong> Leader, Main Rapper</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/rkive" style="color:#ffcc00;">Instagram</a></p>
+    </div>
+</section>
+
+<!-- Jin Section -->
+<section id="jin" style="background-color:#f8f9fa; padding:20px;">
+    <div class="container" style="text-align:center;">
+        <h2 style="color:#7c37ad;">Jin</h2>
+        <img src="https://consequence.net/wp-content/uploads/2024/10/jin-bts-happy.jpeg?quality=80" alt="Jin" class="cropped-image">
+        <p><strong>Real Name:</strong> Kim Seok-jin</p>
+        <p><strong>Age:</strong> 31</p>
+        <p><strong>Birthday:</strong> December 4, 1992</p>
+        <p><strong>Hometown:</strong> Anyang, South Korea</p>
+        <p><strong>Position:</strong> Vocalist</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/jin" style="color:#7c37ad;">Instagram</a></p>
+    </div>
+</section>
+
+<!-- Suga Section -->
+<section id="suga" style="background-color:#492264; padding:20px;">
+    <div class="container" style="text-align:center; color:white;">
+        <h2>Suga</h2>
+        <img src="https://elcomercio.pe/resizer/v2/XYW75MSWDJFDRGWL3544CXF2VY.jpg?auth=f78cb973ca110c2f8b4335bb693e005bdbbdaf7931dd84d59ee5af96f2ffccb4&width=1200&height=810&quality=90&smart=true" alt="Suga" class="cropped-image">
+        <p><strong>Real Name:</strong> Min Yoon-gi</p>
+        <p><strong>Age:</strong> 31</p>
+        <p><strong>Birthday:</strong> March 9, 1993</p>
+        <p><strong>Hometown:</strong> Buk-gu, South Korea</p>
+        <p><strong>Position:</strong> Lead Rapper</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/agustd" style="color:#ffcc00;">Instagram</a></p>
+    </div>
+</section>
+
+<!-- J-Hope Section -->
+<section id="jhope" style="background-color:#f8f9fa; padding:20px;">
+    <div class="container" style="text-align:center;">
+        <h2 style="color:#7c37ad;">J-Hope</h2>
+        <img src="https://assets-metrostyle.abs-cbn.com/prod/metro.style/media/2021/may/bts-jhope-birthday-tribute-2022-desktop.jpg?ext=.jpg" alt="J-Hope" class="cropped-image">
+        <p><strong>Real Name:</strong> Jung Ho-seok</p>
+        <p><strong>Age:</strong> 30</p>
+        <p><strong>Birthday:</strong> February 18, 1994</p>
+        <p><strong>Hometown:</strong> Gwangju, South Korea</p>
+        <p><strong>Position:</strong> Main Dancer, Rapper</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/uarmyhope" style="color:#7c37ad;">Instagram</a></p>
+    </div>
+</section>
+
+<!-- Jimin Section -->
+<section id="jimin" style="background-color:#492264; padding:20px;">
+    <div class="container" style="text-align:center; color:white;">
+        <h2>Jimin</h2>
+        <img src="https://vinews.ig.com.br/wp-content/uploads/2024/03/jimin-big-hit-music.jpg" alt="Jimin" class="cropped-image">
+        <p><strong>Real Name:</strong> Park Ji-min</p>
+        <p><strong>Age:</strong> 29</p>
+        <p><strong>Birthday:</strong> October 13, 1995</p>
+        <p><strong>Hometown:</strong> Busan, South Korea</p>
+        <p><strong>Position:</strong> Lead Vocalist, Main Dancer</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/j.m" style="color:#ffcc00;">Instagram</a></p>
+    </div>
+</section>
+
+<!-- V Section -->
+<section id="v" style="background-color:#f8f9fa; padding:20px;">
+    <div class="container" style="text-align:center;">
+        <h2 style="color:#7c37ad;">V</h2>
+        <img src="https://static.toiimg.com/photo.cms?photoid=106413664" alt="V" class="cropped-image">
+        <p><strong>Real Name:</strong> Kim Tae-hyung</p>
+        <p><strong>Age:</strong> 28</p>
+        <p><strong>Birthday:</strong> December 30, 1995</p>
+        <p><strong>Hometown:</strong> Daegu, South Korea</p>
+        <p><strong>Position:</strong> Vocalist</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/thv" style="color:#7c37ad;">Instagram</a></p>
+    </div>
+</section>
+
+<!-- Jungkook Section -->
+<section id="jungkook" style="background-color:#492264; padding:20px;">
+    <div class="container" style="text-align:center; color:white;">
+        <h2>Jungkook</h2>
+        <img src="https://people.com/thmb/bxifhmPokbkxxllrssJPBuXszME=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/jungkook-jack-harlow-tout-092923-e0839a4a52f942db86a6a4c9d429ec61.jpg" alt="Jungkook" class="cropped-image">
+        <p><strong>Real Name:</strong> Jeon Jung-kook</p>
+        <p><strong>Age:</strong> 27</p>
+        <p><strong>Birthday:</strong> September 1, 1997</p>
+        <p><strong>Hometown:</strong> Busan, South Korea</p>
+        <p><strong>Position:</strong> Main Vocalist, Lead Dancer</p>
+        <p><strong>Social Media:</strong> <a href="https://instagram.com/jungkook" style="color:#ffcc00;">Instagram</a></p>
+    </div>
+</section>
+
+
+        <!-- Footer -->
+        <footer class="text-center mt-5 mb-3">
+            <p>&copy; 3140567: Paula Vianca Cunanan, University of Stirling</p>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
